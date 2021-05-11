@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* full responsive background image */
+body {
+  background-image: url("turntable-1337986_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* block of 500px by 300px */
+.block {
+  width: 500px;
+  height: 300px;
+  background: black; /* to see the block */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* media query for devices with less than 600px */
+@media only screen and (max-width: 600px) {
+  .block {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    background: yellow;
+  }
+}
